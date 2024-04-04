@@ -138,7 +138,7 @@ public class Product implements IProduct, Comparable<Product>
     }
 
     //Hàm hiển thị các thông tin cơ bản thay vì toàn bộ các chi tiết,
-    // để tiện cho việc hiển thị thông tin tìm kiếm
+    //để tiện cho việc hiển thị thông tin tìm kiếm
     public void displayBasicData()
     {
         System.out.printf("Mã sản phẩm: %d | Tên sản phẩm: %s\n", this.productId, this.productName);

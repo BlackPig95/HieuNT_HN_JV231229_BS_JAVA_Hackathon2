@@ -5,6 +5,7 @@ import ra.config.CONSOLECOLORS;
 import ra.config.InputMethods;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -87,7 +88,7 @@ public class ProductManagement
             return;
         }
         //Sort dựa theo comparable đã triển khai trong class Product
-        productList.sort(Product::compareTo);
+        Collections.sort(productList);
         //Hiển thị lại danh sách sau sắp xếp
         System.out.println(CONSOLECOLORS.GREEN + "Sắp xếp thành công:" + CONSOLECOLORS.RESET);
         productList.forEach(Product::displayBasicData);
